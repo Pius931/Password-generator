@@ -13,7 +13,7 @@ Users can customize password length and include uppercase letters, lowercase let
 
 ## Demo
 
-Check out the live app here: [Click to view app](https://your-username.github.io/your-repo-name/)  
+Check out the live app here: [Click to view app](https://pius931.github.io/Password-generator/)  
 
 ## Technologies Used
 
