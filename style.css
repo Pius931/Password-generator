@@ -1,0 +1,130 @@
+/* ====== Reset some default styles ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ====== Body styling ====== */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 40px 20px;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* ====== Title ====== */
+h1 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+}
+
+/* ====== Input for length ====== */
+#length {
+  width: 80px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ====== Result span & copy button container ====== */
+#result,
+#copy {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 1em;
+}
+
+#result {
+  min-width: 250px;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-right: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ====== Copy button ====== */
+#copy {
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#copy:hover {
+  background-color: #45a049;
+}
+
+/* ====== Message paragraph ====== */
+#message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  height: 1.2rem; /* keeps layout from jumping when message appears */
+  text-align: center;
+}
+
+/* ====== Checkbox section ====== */
+#checkBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+  margin: 20px 0;
+}
+
+#checkBox label {
+  margin-right: 6px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+#checkBox input[type="checkbox"] {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* ====== Generate button ====== */
+#generate button {
+  padding: 12px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#generate button:hover {
+  background-color: #0069d9;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 500px) {
+  #checkBox {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #result {
+    min-width: 180px;
+    margin-bottom: 10px;
+  }
+}
